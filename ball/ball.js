@@ -5,6 +5,14 @@ let ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+// HANDLE RESIZE OF CANVAS
+window.addEventListener("resize", () => {
+  console.log("sadf")
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  // console.log(canvas.width, canvas.height);
+});
+
 // SHOW INTRO SCREEN
 ctx.font = "30px sans-serif";
 ctx.textAlign = "center";
